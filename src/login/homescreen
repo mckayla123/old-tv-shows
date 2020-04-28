@@ -1,0 +1,97 @@
+import React from 'react';
+import {
+  StyleSheet,
+  Text,
+  Keyboard,
+  View,
+  TextInput,
+  TouchableWithoutFeedback,
+  Alert,
+  KeyboardAvoidingView,
+  Button,
+  Image,
+  TouchableHighlight,
+  ImageBackground,Platform,Animated
+} from 'react-native';
+
+
+
+class Homescreen extends React.Component {
+
+  
+
+  render() {
+    return (
+
+
+      <View style={styles.container}>
+       
+          <View style={styles.textContainer}>
+
+          <Image source ={{uri: 'https://drive.google.com/thumbnail?id=1coocZwyWV-0hP5T0Bvs_d9-4WKh4UAn5&authuser=1&sz=w1366-h609'}}
+ style={{ height: 200, width: 250, justifyContent: 'center', }}
+/>
+          
+          
+            </View>
+
+
+ 
+
+<View style={styles.textContainer}>
+            <TouchableHighlight
+              onPress={() => this.props.navigation.navigate('File')}
+            >
+           <View style={styles.touchableButton1}>
+                        <Text style={styles.buttonText}>
+                            GET STARTED
+                        </Text>
+                    </View>
+                </TouchableHighlight>
+            </View>
+
+ 
+
+      </View>
+    );
+  }
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: 'light gray',
+    justifyContent: 'center',
+  },
+
+
+  textContainer: {
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+
+
+
+   touchableButton1: {
+        backgroundColor: 'orange',
+        height: 40,
+        width: 200,
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginTop: 100,
+        marginBottom: 50,
+         borderRadius: 10,
+   
+   
+    },
+   
+    buttonText: {
+     
+        
+        fontSize: 14,
+        fontWeight:'bold',
+    }
+});
+
+
+export default Homescreen;
