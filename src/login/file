@@ -1,0 +1,107 @@
+import React from 'react';
+import {
+  StyleSheet,
+  Text,
+  Keyboard,
+  View,
+  TextInput,
+  TouchableWithoutFeedback,
+  Alert,
+  KeyboardAvoidingView,
+  Button,
+  Image,
+  TouchableHighlight,
+  ImageBackground,Platform,Animated
+} from 'react-native';
+
+
+
+class File extends React.Component {
+
+  
+
+  render() {
+    return (
+
+
+      <View style={styles.container}>
+
+    <Text style ={styles.welcome}>
+    CHOOSE THE AGE GROUP YOU CORRESPOND WITH.
+       </Text>
+       
+       <View style={styles.textContainer}>
+            <TouchableHighlight
+              onPress={() => this.props.navigation.navigate('Blue')}
+            >
+           <View style={styles.touchableButton2}>
+                        <Text style={styles.buttonText}>
+                            Adult 21+
+                        </Text>
+                    </View>
+                </TouchableHighlight>
+            </View>
+
+                 <View style={styles.textContainer}>
+            <TouchableHighlight
+              onPress={() => this.props.navigation.navigate('One')}
+            >
+           <View style={styles.touchableButton2}>
+                        <Text style={styles.buttonText}>
+                            Teenager 13-19
+                        </Text>
+                    </View>
+                </TouchableHighlight>
+            </View>
+
+             <View style={styles.textContainer}>
+            <TouchableHighlight
+              onPress={() => this.props.navigation.navigate('Two')}
+            >
+           <View style={styles.touchableButton2}>
+                        <Text style={styles.buttonText}>
+                            Children 5-12
+                        </Text>
+                    </View>
+                </TouchableHighlight>
+            </View>
+ 
+
+      </View>
+    );
+  }
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: 'light gray',
+    justifyContent: 'center',
+    alignItems:'center',
+  },
+
+  welcome:{
+    textAlign:'center',
+    marginBottom:12,
+  },
+
+   touchableButton2: {
+        backgroundColor: 'orange',
+        height: 40,
+        width: 200,
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginTop: 10,
+        borderRadius: 10,
+   
+   
+    },
+  buttonText:{
+    fontWeight:'Bold',
+    fontSize:15,
+    fontFamily:'Gramond',
+  },
+});
+
+
+export default File;
