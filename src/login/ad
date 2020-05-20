@@ -1,0 +1,110 @@
+import React from 'react';
+import {
+  StyleSheet,
+  Text,
+  Keyboard,
+  View,
+  TextInput,
+  TouchableWithoutFeedback,
+  Alert,
+  KeyboardAvoidingView,
+  Button,
+  Image,
+  TouchableHighlight,
+  ImageBackground,Platform,Animated,ScrollView
+} from 'react-native';
+
+
+
+class Ad extends React.Component {
+
+  
+
+  render() {
+    return (
+      
+
+      <View style={styles.container}>
+
+
+       <Text style={styles.textContainer}>
+       YOU CHOSE ADULT DRAMA
+        </Text>
+        
+        <ScrollView>
+        
+    <View style={styles.textContainer}>
+          
+  <Text style={styles.buttonText}>
+       1.CRIMINAL MINDS
+       </Text>
+
+    <Image source ={{uri: 'https://m.media-amazon.com/images/M/MV5BNGE2ZmFkZTYtNjRiOS00ZjE3LThjOWMtZTViZjRmNDFjNTQwXkEyXkFqcGdeQXVyNjg4NzAyOTA@._V1_.jpg'}}
+ style={{ height: 200, width: 200, justifyContent: 'center', }}
+/>
+         
+
+      <Text style={styles.buttonText}>
+       2. UGLY BETTY
+       </Text>
+
+ <Image source ={{uri: 'https://m.media-amazon.com/images/M/MV5BMTg4ODA2OTg5MF5BMl5BanBnXkFtZTcwNzcyMTQ5Mg@@._V1_UY1200_CR135,0,630,1200_AL_.jpg'}}
+ style={{ height: 300, width: 200, justifyContent: 'center', }}
+/>
+
+       <Text style={styles.buttonText}>
+       3.CHARMED
+       </Text>
+
+ <Image source ={{uri: 'https://m.media-amazon.com/images/M/MV5BNTIxNmUxMWQtNjc0Yy00NjM2LWFjMTMtNjA2MmEzOTFiMWRmXkEyXkFqcGdeQXVyNzA5NjUyNjM@._V1_UY1200_CR93,0,630,1200_AL_.jpg'}}
+ style={{ height: 200, width: 300, justifyContent: 'center', }}
+/>
+
+       <Text style={styles.buttonText}>
+       4.GOSSIP GIRL
+       </Text>
+
+ <Image source ={{uri: 'https://centralrecorder.org/wp-content/uploads/2018/10/gossip-girl-475x267.jpg'}}
+ style={{ height: 200, width: 200, justifyContent: 'center', }}
+/>
+
+       
+        </View>
+
+      </ScrollView>
+                </View>
+    );
+  }
+}
+
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: 'light gray',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+
+  textContainer:{
+   alignItems: 'center',
+    textAlign: 'center',
+    fontWeight:'Bold',
+    fontSize:15,
+    fontFamily:'Gramond',
+    color:'blue'
+   
+  },
+  buttonText:{
+    textAlign: 'center',
+    marginTop:12,
+    fontWeight:'Bold',
+    fontSize:15,
+    fontFamily:'Gramond',
+  },
+
+   
+});
+
+
+export default Ad;
