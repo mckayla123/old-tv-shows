@@ -1,0 +1,154 @@
+import React from 'react';
+import {
+  StyleSheet,
+  Text,
+  Keyboard,
+  View,
+  TextInput,
+  TouchableWithoutFeedback,
+  Alert,
+  KeyboardAvoidingView,
+  Button,
+  Image,
+  TouchableHighlight,
+  ImageBackground,Platform,Animated,ScrollView
+} from 'react-native';
+
+
+
+class Ac extends React.Component {
+
+  
+
+  render() {
+    return (
+      
+
+      <View style={styles.container}>
+
+       <Text style={styles.textContainer}>
+       YOU CHOSE COMEDY
+        </Text>
+        <ScrollView>
+    <View style={styles.textContainer}>
+          
+  <Text style={styles.buttonText}>
+       1.KIM POSSIBLE
+       </Text>
+
+    <Image source ={{uri: 'https://www.spectatornews.com/wp-content/uploads/2018/10/Kim-Possible-600x900.jpg'}}
+ style={{ height: 300, width: 200, justifyContent: 'center', }}
+/>
+         
+
+      <Text style={styles.buttonText}>
+       2. RUGRATS
+       </Text>
+
+ <Image source ={{uri: 'https://img2.hulu.com/user/v3/artwork/c9a9273e-363b-4171-8239-d7ca923bef46?base_image_bucket_name=image_manager&base_image=2c2c52ba-c571-4157-8b57-462b5229390d&size=400x600&format=jpeg'}}
+ style={{ height: 300, width: 200, justifyContent: 'center', }}
+/>
+
+       <Text style={styles.buttonText}>
+       3.SPONGEBOB
+       </Text>
+
+ <Image source ={{uri: 'https://nick.mtvnimages.com/uri/mgid:arc:content:nick.com:9cd2df6e-63c7-43da-8bde-8d77af9169c7?quality=0.7'}}
+ style={{ height: 200, width: 200, justifyContent: 'center', }}
+/>
+
+       <Text style={styles.buttonText}>
+       4.EVEN STEVENS
+       </Text>
+
+ <Image source ={{uri: 'https://img.reelgood.com/content/show/48a77d9e-a637-4747-a737-06bb9bfef1a8/poster-780.jpg'}}
+ style={{ height: 200, width: 200, justifyContent: 'center', }}
+/>
+
+       <Text style={styles.buttonText}>
+       5.THE TELETUBIES
+       </Text>
+
+ <Image source ={{uri: 'https://images-na.ssl-images-amazon.com/images/I/81p4ewKf11L.jpg'}}
+ style={{ height: 200, width: 200, justifyContent: 'center', }}
+/>
+
+ <Text style={styles.buttonText}>
+       6.ARTHUR
+       </Text>
+
+ <Image source ={{uri: 'https://d43fweuh3sg51.cloudfront.net/media/collections/PBSK_Arthur_Community_500x500.png'}}
+ style={{ height: 200, width: 200, justifyContent: 'center', }}
+/>
+ <Text style={styles.buttonText}>
+       7.THE POWER PUFF GIRLS
+       </Text>
+
+ <Image source ={{uri: 'https://m.media-amazon.com/images/M/MV5BODdmZmFlMGUtZWE5NC00NmU5LTg3NzItOTNjNDc4ZTc2YzI1XkEyXkFqcGdeQXVyNjM1MTQ0NTQ@._V1_UY1200_CR114,0,630,1200_AL_.jpg'}}
+ style={{ height: 200, width: 200, justifyContent: 'center', }}
+/>
+
+ <Text style={styles.buttonText}>
+       8.COURAGE THE COWARDLY DOG
+       </Text>
+
+ <Image source ={{uri: 'https://m.media-amazon.com/images/M/MV5BMTU4MGEyNTItNzg5ZS00ZGU0LTk4NmEtODM0Y2UxYTY2YTUyXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg'}}
+ style={{ height: 300, width: 200, justifyContent: 'center', }}
+/>
+
+ <Text style={styles.buttonText}>
+       9.HEY ARNOLD
+       </Text>
+
+ <Image source ={{uri: 'https://img.hulu.com/user/v3/artwork/a4a06e0c-c4d8-4b34-a55e-a28c57ecc429?base_image_bucket_name=image_manager&base_image=b8f52699-81b5-417b-9c5f-8f7f63528c33&size=400x600&format=jpeg'}}
+ style={{ height: 200, width: 200, justifyContent: 'center', }}
+/>
+
+ <Text style={styles.buttonText}>
+       10.THE MAGIC SCHOOL BUS
+       </Text>
+
+ <Image source ={{uri: 'https://m.media-amazon.com/images/M/MV5BNzI3YTI5NzQtNWIwOC00NTM3LWJjODEtYzE0YjcyZTc3ODg1XkEyXkFqcGdeQXVyNDgyODgxNjE@._V1_UY1200_CR110,0,630,1200_AL_.jpg'}}
+ style={{ height: 300, width: 200, justifyContent: 'center', }}
+/>
+       
+        </View>
+
+      
+          </ScrollView>
+                </View>
+    );
+  }
+}
+
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: 'light gray',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+
+  textContainer:{
+   alignItems: 'center',
+    textAlign: 'center',
+    fontWeight:'Bold',
+    fontSize:15,
+    fontFamily:'Gramond',
+    color:'blue'
+   
+  },
+  buttonText:{
+    textAlign: 'center',
+    marginTop:12,
+    fontWeight:'Bold',
+    fontSize:15,
+    fontFamily:'Gramond',
+  },
+
+   
+});
+
+
+export default Ac;
